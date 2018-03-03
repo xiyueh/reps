@@ -10,7 +10,7 @@
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
 
-        <title>Dashboard Template for Bootstrap</title>
+        <title>Reps Analytics - Dashboard</title>
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -32,7 +32,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <!-- Chart.js -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>s
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+        <!-- AngularJS -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -68,18 +71,37 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" ng-app="myApp" ng-controller="myCtrl">
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
                     <li><a href="#">Reports</a></li>
-                    <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">Dashboard</h1>
+                <h1 class="page-header">
+                    <div class="row">
+                        <div class="col-md-7">Dashboard</div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <span ng-show="showLiveData">Live Data</span>
+                                <span ng-show="!showLiveData">Historical Data</span>
+                                <label class="switch">
+                                    <input type="checkbox" ng-model="showLiveData">
+                                    <span class="slider round"></span>
+                                </label>
+                                <input type="text" value="25/02/15 - 03/03/18" class="form-control pull-right" data-provide="datepicker" ng-show="!showLiveData">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </h1>
 
                 <div class="row placeholders">
                     <div class="col-xs-6 col-sm-4 placeholder">
@@ -216,6 +238,14 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">Powered by Reps Analytics Copyright 2018</div>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="js/index.js"></script>
 

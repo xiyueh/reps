@@ -17,7 +17,7 @@ var trafficChart = new Chart(trafficChartCanvas, {
         labels: [
             // 'Red',
             'Checked In',
-            'Not Checked In'
+            'Checked Out'
         ]
     },
     // options: options
@@ -37,8 +37,8 @@ var usageChart = new Chart(usageChartCanvas, {
         // These labels appear in the legend and in the tooltips when hovering different arcs
         labels: [
             // 'Red',
-            'Being Used',
-            'Not Being Used'
+            'Occupied',
+            'Idle'
         ]
     },
     // options: options
@@ -59,8 +59,13 @@ var trafficChart2 = new Chart(trafficChartCanvas2, {
         labels: [
             // 'Red',
             'Checked In',
-            'Not Checked In'
+            'Checked Out'
         ]
     },
     // options: options
+});
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.showLiveData = true;
 });
