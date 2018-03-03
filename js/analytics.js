@@ -124,6 +124,138 @@ var equipUsageHistoryChart = new Chart(equipUsageHistoryChartCanvas, {
 	            	{x:'Mar 2018', y:87},
 	        	]
 	        },
+	        {
+	            label: "Cables and Pulleys",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:30},
+	            	{x:'Dec 2017', y:28},
+	            	{x:'Jan 2018', y:25},
+	            	{x:'Feb 2018', y:21},
+	            	{x:'Mar 2018', y:22},
+	        	]
+	        },
+	        {
+	            label: "Calf Machines",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:14},
+	            	{x:'Dec 2017', y:12},
+	            	{x:'Jan 2018', y:15},
+	            	{x:'Feb 2018', y:15},
+	            	{x:'Mar 2018', y:14},
+	        	]
+	        },
+	        {
+	            label: "Dipping Bars",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:35},
+	            	{x:'Dec 2017', y:32},
+	            	{x:'Jan 2018', y:38},
+	            	{x:'Feb 2018', y:40},
+	            	{x:'Mar 2018', y:38},
+	        	]
+	        },
+	        {
+	            label: "Dumb Bells",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:65},
+	            	{x:'Dec 2017', y:60},
+	            	{x:'Jan 2018', y:63},
+	            	{x:'Feb 2018', y:62},
+	            	{x:'Mar 2018', y:60},
+	        	]
+	        },
+	        {
+	            label: "Foam Roller",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:5},
+	            	{x:'Dec 2017', y:10},
+	            	{x:'Jan 2018', y:12},
+	            	{x:'Feb 2018', y:6},
+	            	{x:'Mar 2018', y:2},
+	        	]
+	        },
+	        {
+	            label: "Hyper Extension Bench",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:19},
+	            	{x:'Dec 2017', y:18},
+	            	{x:'Jan 2018', y:21},
+	            	{x:'Feb 2018', y:21},
+	            	{x:'Mar 2018', y:21},
+	        	]
+	        },
+	        {
+	            label: "Incline Bench Press",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:68},
+	            	{x:'Dec 2017', y:65},
+	            	{x:'Jan 2018', y:80},
+	            	{x:'Feb 2018', y:75},
+	            	{x:'Mar 2018', y:67},
+	        	]
+	        },
+	        {
+	            label: "Kettle Bells",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:32},
+	            	{x:'Dec 2017', y:28},
+	            	{x:'Jan 2018', y:36},
+	            	{x:'Feb 2018', y:35},
+	            	{x:'Mar 2018', y:35},
+	        	]
+	        },
+	        {
+	            label: "Leg Press machine",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:5},
+	            	{x:'Dec 2017', y:6},
+	            	{x:'Jan 2018', y:7},
+	            	{x:'Feb 2018', y:5},
+	            	{x:'Mar 2018', y:5},
+	        	]
+	        },
+	        {
+	            label: "Pull Up Bar",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:87},
+	            	{x:'Dec 2017', y:70},
+	            	{x:'Jan 2018', y:56},
+	            	{x:'Feb 2018', y:67},
+	            	{x:'Mar 2018', y:78},
+	        	]
+	        },
+	        {
+	            label: "Rowing Machine",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:65},
+	            	{x:'Dec 2017', y:53},
+	            	{x:'Jan 2018', y:56},
+	            	{x:'Feb 2018', y:62},
+	            	{x:'Mar 2018', y:67},
+	        	]
+	        },
+	        {
+	            label: "Treadmill",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'Nov 2017', y:78},
+	            	{x:'Dec 2017', y:75},
+	            	{x:'Jan 2018', y:85},
+	            	{x:'Feb 2018', y:83},
+	            	{x:'Mar 2018', y:80},
+	        	]
+	        },
         ]
     },
 
