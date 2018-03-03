@@ -69,7 +69,11 @@ var equipUsageChart = new Chart(equipUsageChartCanvas, {
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+    	legend: {
+    		position: 'left'
+    	}
+    }
 });
 
 var equipUsageHistoryChartCanvas = document.getElementById("equipUsageHistoryChart");
@@ -124,7 +128,11 @@ var equipUsageHistoryChart = new Chart(equipUsageHistoryChartCanvas, {
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+    	legend: {
+    		position: 'left'
+    	}
+    }
 });
 
 var app = angular.module('myApp', []);
