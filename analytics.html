@@ -83,7 +83,105 @@
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">Equipment Usage</h1>
+
+                <!-- Filter -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Filter</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <!-- Store dropdown -->
+                                <div class="form-group">
+                                    <label>Gym</label>
+                                    <select class="form-control">
+                                        <option value="hamilton">Jetts Hamilton</option>
+                                        <option value="fortitude-valley">Jetts Brisbane CBD</option>
+                                        <option value="fortitude-valley">Jetts Ashgrove</option>
+                                        <option value="fortitude-valley">Jetts Chermside West</option>
+                                        <option value="fortitude-valley">Jetts Ferny Grove</option>
+                                        <option value="fortitude-valley">Jetts Fortitude Valley</option>
+                                        <option value="fortitude-valley">Jetts Greenslopes</option>
+                                        <option value="fortitude-valley">Jetts Kawana</option>
+                                        <option value="fortitude-valley">Jetts Logan Central</option>
+                                        <option value="fortitude-valley">Jetts Lutwyche</option>
+                                        <option value="fortitude-valley">Jetts Bundaberg</option>
+                                        <option value="fortitude-valley">Jetts Aspley</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Equipment dropdown -->
+                                <div class="form-group">
+                                    <label>Equipment</label>
+                                    <select class="form-control">
+                                        <option value="1">Abdominal Bench</option>
+                                        <option value="2">Barbells</option>
+                                        <option value="3">Bench Press</option>
+                                        <option value="4">Cables and Pulleys</option>
+                                        <option value="5">Calf Machines</option>
+                                        <option value="6">Dipping Bars</option>
+                                        <option value="7">Dumb Bells</option>
+                                        <option value="8">Foam Roller</option>
+                                        <option value="9">Glute Ham Developer</option>
+                                        <option value="10">Hack Squat Machine</option>
+                                        <option value="11">Hammer Strength Machine</option>
+                                        <option value="12">Hyper Extension Bench</option>
+                                        <option value="13">Incline Bench Press</option>
+                                        <option value="14">Kettle Bells</option>
+                                        <option value="15">Lat Pull Down Machine</option>
+                                        <option value="16">Leg Adduction / Abduction Machine</option>
+                                        <option value="17">Leg Curl Machine</option>
+                                        <option value="18">Leg Extension Machine</option>
+                                        <option value="19">Leg Press machine</option>
+                                        <option value="20">Preacher Bench</option>
+                                        <option value="21">Pull Up Bar</option>
+                                        <option value="22">Rowing Machine</option>
+                                        <option value="23">Smith Machine</option>
+                                        <option value="24">Squat Station</option>
+                                        <option value="25">Treadmill</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Pattern dropdown -->
+                                <div class="form-group">
+                                    <label>Pattern</label>
+                                    <select class="form-control">
+                                        <option value="daily">Daily</option>
+                                        <option value="weekly">Weekly</option>
+                                        <option value="monthly">Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Day dropdown -->
+                                <div class="form-group">
+                                    <label>Day</label>
+                                    <select class="form-control">
+                                        <option value="4/3/2018">4/3/2018</option>
+                                        <option value="3/3/2018">3/3/2018</option>
+                                        <option value="2/3/2018">2/3/2018</option>
+                                        <option value="1/3/2018">1/3/2018</option>
+                                        <option value="28/2/2018">28/2/2018</option>
+                                        <option value="27/2/2018">27/2/2018</option>
+                                        <option value="26/2/2018">26/2/2018</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Daily Usage Monitor</h2>
+                <canvas id="dailyBreakdownChart" width="400" height="400"></canvas>
+
+                <h2>Overall Usage by Equipment</h2>
                 <canvas id="equipUsageChart" width="400" height="400"></canvas>
+
+                <h2>Usage Trend Overtime</h2>
                 <canvas id="equipUsageHistoryChart" width="400" height="400"></canvas>
             </div>
         </div>

@@ -48,7 +48,7 @@ var equipUsageChart = new Chart(equipUsageChartCanvas, {
 	            	{x:'Foam Roller', y:2},
 	            	{x:'Glute Ham Developer', y:1},
 	            	{x:'Hack Squat Machine', y:45},
-	            	{x:'Hammer Strength machine', y:25},
+	            	{x:'Hammer Strength Machine', y:25},
 	            	{x:'Hyper Extension Bench', y:21},
 	            	{x:'Incline Bench Press', y:67},
 	            	{x:'Kettle Bells', y:35},
@@ -256,6 +256,51 @@ var equipUsageHistoryChart = new Chart(equipUsageHistoryChartCanvas, {
 	            	{x:'Mar 2018', y:80},
 	        	]
 	        },
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+    	legend: {
+    		position: 'left'
+    	}
+    }
+});
+
+var dailyBreakdownChartCanvas = document.getElementById("dailyBreakdownChart");
+var dailyBreakdownChart = new Chart(dailyBreakdownChartCanvas, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: [
+            '0',
+            '3',
+            '6',
+            '9',
+            '12',
+            '15',
+            '18',
+            '21',
+            '24',
+        ],
+        datasets: [
+	        {
+	            label: "Reps",
+	            borderColor: 'rgb(54, 162, 235)',
+	            data: [
+	            	{x:'0', y:0},
+	            	{x:'3', y:0},
+	            	{x:'6', y:300},
+	            	{x:'9', y:600},
+	            	{x:'12', y:1000},
+	            	{x:'15', y:300},
+	            	{x:'18', y:800},
+	            	{x:'21', y:200},
+	            	{x:'24', y:0},
+	        	]
+	        }
         ]
     },
 
